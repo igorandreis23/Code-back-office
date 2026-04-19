@@ -5,7 +5,6 @@ import {
   Plus,
   Play,
   Pause,
-  ChevronRight,
   Clock,
   Mail,
   MessageSquare,

@@ -185,12 +185,6 @@ const modules: Module[] = [
   },
 ]
 
-const layers = [
-  { id: 'sources', label: 'Fontes Externas', color: 'from-gray-100 to-gray-50', border: 'border-gray-200' },
-  { id: 'integration', label: 'Camada de Integração', color: 'from-purple-50 to-purple-25', border: 'border-purple-100' },
-  { id: 'core', label: 'OpCenter Core — Event Bus', color: 'from-brand-50 to-brand-25', border: 'border-brand-200' },
-  { id: 'data', label: 'Camada de Dados', color: 'from-slate-100 to-slate-50', border: 'border-slate-200' },
-]
 
 interface DetailPanelProps {
   module: Module
