@@ -4,12 +4,7 @@ import {
   Users,
   Search,
   Plus,
-  ChevronRight,
   GitBranch,
-  DollarSign,
-  Clock,
-  CheckCircle2,
-  AlertTriangle,
   Mail,
   Phone,
 } from 'lucide-react'

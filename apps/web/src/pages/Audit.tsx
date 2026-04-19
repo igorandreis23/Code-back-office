@@ -8,7 +8,6 @@ import {
   CheckCircle2,
   AlertTriangle,
   User,
-  Monitor,
   ChevronDown,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
