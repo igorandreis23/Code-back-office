@@ -13,7 +13,7 @@ Sistema de back-office modular com diagrama de arquitetura interativo para PMEs 
 | Infra | Docker Compose (dev) → Railway/Render → AWS ECS (produção) |
 | Auth | JWT + Passport + multi-tenant por `tenantId` |
 
-## Módulos
+## Módulos 
 
 - **Arquitetura** — Diagrama interativo com 4 camadas e 6 módulos clicáveis
 - **Dashboard** — KPIs pré-configurados por nicho com alertas proativos
