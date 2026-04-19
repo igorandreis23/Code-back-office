@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>OpCenter</title>
+    <script>
+      // Redireciona para index.html mantendo o path como hash
+      var path = window.location.pathname.replace('/Code-back-office', '')
+      window.location.replace(
+        window.location.origin + '/Code-back-office/#' + path
+      )
+    </script>
+  </head>
+  <body></body>
+</html>

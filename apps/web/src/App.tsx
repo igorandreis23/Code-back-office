@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AppLayout } from './components/layout/AppLayout'
 import { ArchitecturePage } from './pages/Architecture'
 import { DashboardPage } from './pages/Dashboard'
@@ -10,7 +10,7 @@ import { AuditPage } from './pages/Audit'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate to="/architecture" replace />} />
@@ -23,6 +23,6 @@ export default function App() {
           <Route path="/audit" element={<AuditPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
