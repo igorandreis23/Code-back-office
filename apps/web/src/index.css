@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-lg hover:bg-brand-700 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-gray-900;
+  }
+}
+
+/* Architecture diagram animations */
+.arch-line {
+  stroke-dasharray: 8 4;
+  animation: dash-flow 2s linear infinite;
+}
+
+.arch-line-reverse {
+  stroke-dasharray: 8 4;
+  animation: dash-flow-reverse 2s linear infinite;
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes dash-flow-reverse {
+  to {
+    stroke-dashoffset: 24;
+  }
+}
+
+.module-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 8px 16px rgba(90, 99, 245, 0.15));
+}
+
+.module-card.selected {
+  filter: drop-shadow(0 0 0 2px #5a63f5) drop-shadow(0 8px 20px rgba(90, 99, 245, 0.25));
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
